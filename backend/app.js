@@ -28,10 +28,11 @@ const DB_URL = require('./config/keys').MongoURI;
 
 //connect to mongo
 //---------------------------------------------
-mongoose.connect( DB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+// mongoose.connect( DB_URL, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// })
+mongoose.connect("mongodb+srv://kingpin886722:atlas0987^@cluster0.5ozclgj.mongodb.net/?retryWrites=true&w=majority", {useNewUrlParser: true},{useUnifiedTopology: true})
     .then(() => {
         console.log("Connected to MongoDB")
     })
